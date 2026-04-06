@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NFT</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+  
+</head>
+<body class="bg-gray-100 overflow-x-hidden m-0 p-0 antialiased">
+
+<nav class="fixed top-0 left-0 w-full flex justify-center z-50">
+  <div class="bg-white shadow-lg rounded-2xl w-[95%] max-w-7xl px-6 py-3 flex items-center justify-between mt-4 flex-wrap gap-3">
+
+    <!-- LEFT SIDE (logo + links together) -->
+    <div class="flex items-center gap-6 flex-wrap">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img src="Logo.svg" class="w-8 h-8 object-contain" alt="Logo">
+        <span class="font-bold text-lg" style="font-family: 'Goblin One', cursive">NFT</span>
+        <span class="text-xs bg-yellow-400 px-2 py-1 rounded-full font-semibold">BETA</span>
+      </div>
+
+      <!-- Links (LEFT aligned) -->
+      <div class="hidden md:flex items-center gap-6 text-gray-700 font-medium">
+
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-black transition-colors">
+            Discover
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-width="2" d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+
+          <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">NFTs</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Collections</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Profiles</a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-black transition-colors">
+            Learn
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-width="2" d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+
+          <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Docs</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Blog</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+
+      <div class="flex items-center gap-2 border px-3 py-1 rounded-full text-gray-600 bg-white">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search" class="outline-none text-sm w-20 sm:w-28 bg-transparent">
+      </div>
+
+      <button class="bg-yellow-400 hover:bg-yellow-500 transition-colors px-3 sm:px-4 py-2 rounded-full font-semibold text-sm">
+        Sign Up
+      </button>
+
+      <svg class="w-5 h-5 text-gray-700 hover:text-black cursor-pointer transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4"/>
+      </svg>
+
+    </div>
+
+  </div>
+</nav>
+
+<!-- Hero Section: full viewport height, flex column/row responsive, no CSS overrides, only Tailwind -->
+<section class="w-full h-screen flex items-stretch bg-gray-100 overflow-hidden">
+  <!-- full width flex container, responsive column/row layout as originally but mobile friendly -->
+  <div class="w-full flex flex-col md:flex-row items-stretch">
+    
+    <!-- LEFT side: text, images, button — fully responsive, spacing adjusted for small devices -->
+    <div class="w-full md:w-1/2 space-y-6 px-5 sm:px-6 lg:px-10 flex flex-col justify-center py-12 md:py-0">
+      
+      <!-- main heading with inline NFT images, wrapped to avoid overflow -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+        
+        <!-- first line: Own your + small card image -->
+        <div class="flex items-center gap-2 sm:gap-3 flex-wrap font-['Goblin_One']">
+          Own your 
+          <img src="HeroCard1.webp" class="w-10 h-16 sm:w-12 sm:h-20 rotate-12 rounded-lg object-cover shadow-md" alt="hero card">
+        </div>
+
+        <!-- second line: NFT + card image + yellow identity text -->
+        <div class="flex items-center gap-2 sm:gap-3 flex-wrap mt-1 sm:mt-2 font-['Goblin_One']">
+          NFT 
+          <img src="HeroCard2.webp" class="w-10 h-16 sm:w-12 sm:h-20 rotate-12 rounded-lg object-cover shadow-md" alt="hero card">
+          <span class="text-yellow-500 whitespace-nowrap">identity</span>
+        </div>
+
+      </h1>
+
+      <!-- descriptive paragraph -->
+      <p class="text-lg sm:text-xl text-gray-600 max-w-md pr-2">
+        Build your brand with an NFT that is uniquely you
+      </p>
+
+      <!-- CTA button unchanged size but responsive touch -->
+      <button class="bg-black text-white px-4 py-1.5 text-sm rounded-full shadow hover:bg-gray-800 transition w-fit">
+        CREATE A PROFILE
+      </button>
+    </div>
+
+    <!-- RIGHT side: video container (full height relative) — maintaining full height touch top -->
+    <div class="w-full md:w-1/2 h-screen relative bg-black">
+      <video 
+        class="w-full h-full object-cover block"
+        autoplay 
+        muted 
+        loop 
+        playsinline>
+        <source src="nisar.mp4" type="video/mp4">
+      </video>
+
+      <!-- Overlay: centered pill with NFT.COM / NEW, fully responsive text sizing -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div class="bg-black/80 backdrop-blur-sm px-4 py-2 sm:px-6 sm:py-2.5 rounded-full shadow-lg flex items-center gap-1">
+          <h2 class="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-wide">
+            <span class="text-white">NFT.COM</span>
+            <span class="text-yellow-400"> / </span>
+            <span class="text-white">NEW</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<section class="w-full">
+
+  <div class="text-center py-16 px-4">
+    <h2 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-black leading-tight">
+      What you can do with an <br>
+      <span class="text-yellow-400">NFT Profile</span>
+    </h2>
+
+    <div class="w-24 h-1 bg-yellow-400 mx-auto mt-5 mb-8 rounded-full"></div>
+  </div>
+
+  <div class="w-full h-[90vh] md:h-screen relative">
+    <img src="WhatWeCanDoBg.png" class="w-full h-full object-cover">
+
+    <div class="absolute inset-0 flex items-center justify-center px-4 -mt-24 md:-mt-32">
+      <img src="nft_profile_v2 (1).webp" class="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] max-w-none rounded-xl shadow-xl">
+    </div>
+  </div>
+
+</section>
+</body>
+</html>
